@@ -100,10 +100,8 @@ class App {
   }
 
   _loadMap(position) {
-    // console.log(position);
     const { latitude } = position.coords;
     const { longitude } = position.coords;
-    //console.log(`https://www.google.com/maps/@${latitude},${longitude},15z`);
 
     const coords = [latitude, longitude];
     this.#map = L.map('map').setView(coords, this.#mapZoomLevel);
